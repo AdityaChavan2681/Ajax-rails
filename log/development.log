@@ -1,0 +1,1995 @@
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:02:48 +0530
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dell/.rvm/gems/ruby-3.1.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dell/.rvm/gems/ruby-3.1.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.5ms | Allocations: 575)
+Completed 200 OK in 36ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 4374)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2022-12-01 13:06:32 +0530
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 338)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/crypto/hash:71
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:140:10)
+    at module.exports (/home/dell/Desktop/Projects/ajax-rails/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/home/dell/Desktop/Projects/ajax-rails/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/home/dell/Desktop/Projects/ajax-rails/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /home/dell/Desktop/Projects/ajax-rails/node_modules/webpack/lib/NormalModule.js:503:5
+    at /home/dell/Desktop/Projects/ajax-rails/node_modules/webpack/lib/NormalModule.js:358:12
+    at /home/dell/Desktop/Projects/ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/home/dell/Desktop/Projects/ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/home/dell/Desktop/Projects/ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /home/dell/Desktop/Projects/ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback (/home/dell/Desktop/Projects/ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /home/dell/Desktop/Projects/ajax-rails/node_modules/babel-loader/lib/index.js:44:71 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v19.2.0
+
+  Rendered layout layouts/application.html.erb (Duration: 3958.5ms | Allocations: 15714)
+Completed 500 Internal Server Error in 3975ms (ActiveRecord: 0.0ms | Allocations: 18726)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/dell/Desktop/Projects/ajax-rails/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/welcome/index" for 127.0.0.1 at 2022-12-01 13:08:02 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 338)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 6147)
+Completed 200 OK in 39ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 9210)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2022-12-01 13:11:24 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+Started GET "/welcome/index" for 127.0.0.1 at 2022-12-01 13:11:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+Started GET "/welcome/index" for 127.0.0.1 at 2022-12-01 13:11:47 +0530
+  
+SyntaxError (/home/dell/Desktop/Projects/ajax-rails/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  root_to: 'welcome#index'
+         ^
+/home/dell/Desktop/Projects/ajax-rails/config/routes.rb:4: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `end', expecting end-of-input
+Started GET "/welcome/index" for 127.0.0.1 at 2022-12-01 13:11:55 +0530
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/welcome/index" for 127.0.0.1 at 2022-12-01 13:12:02 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+Started GET "/welcome/index" for 127.0.0.1 at 2022-12-01 13:12:57 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:13:01 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 5855)
+Completed 200 OK in 50ms (Views: 38.7ms | ActiveRecord: 0.0ms | Allocations: 8250)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:43:20 +0530
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1391)
+Completed 200 OK in 22ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4568)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:54:11 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 148)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 152)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 1672)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 2926)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:56:01 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 132)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1625)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 2825)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:56:25 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 145)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1624)
+Completed 200 OK in 19ms (Views: 15.3ms | Allocations: 2818)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:56:55 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 145)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 129)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 1620)
+Completed 200 OK in 11ms (Views: 9.7ms | Allocations: 2804)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:57:33 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 145)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 129)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 1620)
+Completed 200 OK in 11ms (Views: 9.3ms | Allocations: 2804)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:57:50 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 148)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 129)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 1625)
+Completed 200 OK in 23ms (Views: 18.9ms | Allocations: 2815)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 14:01:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 146)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1623)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 2813)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 14:16:45 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 157)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 1632)
+Completed 200 OK in 11ms (Views: 9.3ms | Allocations: 2832)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 14:18:12 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 165)
+  Rendered shared/_header.html.erb (Duration: 2.2ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 1639)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 2823)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 14:18:39 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 170)
+  Rendered shared/_header.html.erb (Duration: 1.8ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 1646)
+Completed 200 OK in 30ms (Views: 26.5ms | Allocations: 2836)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 15:59:30 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 166)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 1642)
+Completed 200 OK in 24ms (Views: 20.5ms | Allocations: 2832)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 16:01:55 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 259)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 1710)
+Completed 200 OK in 14ms (Views: 11.3ms | Allocations: 2894)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 16:02:25 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 255)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 1706)
+Completed 200 OK in 28ms (Views: 23.8ms | Allocations: 2890)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20221201104639)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "address" varchar, "contact" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221201104639"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-01 10:49:54.705221"], ["updated_at", "2022-12-01 10:49:54.705221"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-12-01 16:28:19 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 477)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2215)
+Completed 200 OK in 29ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 5401)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-12-01 16:28:38 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1422)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 2270)
+Completed 200 OK in 30ms (Views: 20.4ms | ActiveRecord: 0.4ms | Allocations: 4059)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 16:28:40 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 20.0ms | Allocations: 4953)
+  Rendered users/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 5335)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 6106)
+Completed 200 OK in 50ms (Views: 26.7ms | ActiveRecord: 1.2ms | Allocations: 10826)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-12-01 16:29:14 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"user1", "email"=>"user1@email.com", "address"=>"@user1", "contact"=>"111 22222"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "user1"], ["email", "user1@email.com"], ["address", "@user1"], ["contact", "111 22222"], ["created_at", "2022-12-01 10:59:14.728905"], ["updated_at", "2022-12-01 10:59:14.728905"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 30ms (ActiveRecord: 4.8ms | Allocations: 5980)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-12-01 16:29:14 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 420)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1195)
+Completed 200 OK in 20ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 6456)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 16:29:16 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 950)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 1670)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 2116)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-12-01 16:29:18 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.6ms | Allocations: 1496)
+  Rendered users/edit.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1780)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 2498)
+Completed 200 OK in 27ms (Views: 17.6ms | ActiveRecord: 0.3ms | Allocations: 3615)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 16:29:20 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 912)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 1631)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.2ms | Allocations: 2029)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-12-01 16:29:22 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 126)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 845)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 1814)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 16:29:23 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 918)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 1638)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 2048)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 16:36:28 +0530
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 1003)
+
+
+  
+SyntaxError (/home/dell/Desktop/Projects/ajax-rails/app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+... :address, :contact, :presence: true
+...                              ^
+):
+  
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:15:in `new'
+Started GET "/users" for 127.0.0.1 at 2022-12-01 16:36:32 +0530
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 916)
+
+
+  
+SyntaxError (/home/dell/Desktop/Projects/ajax-rails/app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+... :address, :contact, :presence: true
+...                              ^
+):
+  
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/users" for 127.0.0.1 at 2022-12-01 16:50:15 +0530
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 15ms (Allocations: 4027)
+
+
+  
+SyntaxError (/home/dell/Desktop/Projects/ajax-rails/app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+... :address, :contact, :presence: true
+...                              ^
+):
+  
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:6:in `index'
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 16:50:17 +0530
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 840)
+
+
+  
+SyntaxError (/home/dell/Desktop/Projects/ajax-rails/app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+... :address, :contact, :presence: true
+...                              ^
+):
+  
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:2: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:15:in `new'
+Started GET "/users" for 127.0.0.1 at 2022-12-01 16:50:43 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 18.3ms | Allocations: 5193)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 6040)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 1.2ms | Allocations: 7513)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 16:50:45 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.3ms | Allocations: 1427)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1554)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2271)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 2741)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-12-01 16:50:46 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "address"=>"", "contact"=>""}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 43.8ms | Allocations: 5319)
+  Rendered users/new.html.erb within layouts/application (Duration: 44.8ms | Allocations: 5443)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 6160)
+Completed 422 Unprocessable Entity in 57ms (Views: 51.4ms | ActiveRecord: 0.0ms | Allocations: 7396)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "1213314121"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "1213314121"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "some user"], ["email", "user@example.com"], ["address", "india"], ["contact", "1213314121"], ["created_at", "2022-12-01 11:31:19.932100"], ["updated_at", "2022-12-01 11:31:19.932100"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "user@example.com"], ["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? AND "users"."id" != ? LIMIT ?[0m  [["contact", "1213314121"], ["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "shannon.altenwerth@ortiz.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+47 1-691-993-0319"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Carol Wiza O'Connell"], ["email", "shannon.altenwerth@ortiz.org"], ["address", "Suite 558 7409 Torri Lock, Gerholdton, WV 62597-4202"], ["contact", "+47 1-691-993-0319"], ["created_at", "2022-12-01 11:42:08.857233"], ["updated_at", "2022-12-01 11:42:08.857233"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "adelaide_fisher@greenfelder.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+39 379-198-0113"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Venita Feest Jacobs"], ["email", "adelaide_fisher@greenfelder.org"], ["address", "93134 Schroeder Cliffs, New Hermine, IL 47423-9775"], ["contact", "+39 379-198-0113"], ["created_at", "2022-12-01 11:42:08.919279"], ["updated_at", "2022-12-01 11:42:08.919279"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anja_torphy@beier.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+677 1-283-338-8303"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kathaleen Okuneva Morissette"], ["email", "anja_torphy@beier.com"], ["address", "Suite 991 6030 Paucek Estates, Halliemouth, AK 70531"], ["contact", "+677 1-283-338-8303"], ["created_at", "2022-12-01 11:42:08.953610"], ["updated_at", "2022-12-01 11:42:08.953610"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elton@king.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+56 1-960-652-7361"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Phil Yundt Nikolaus"], ["email", "elton@king.biz"], ["address", "Apt. 550 501 Harris Parkways, Verdiefurt, MS 35165-8449"], ["contact", "+56 1-960-652-7361"], ["created_at", "2022-12-01 11:42:09.036690"], ["updated_at", "2022-12-01 11:42:09.036690"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "remedios_terry@torp.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+809 (938) 676-5721"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tristan Ryan Considine LLD"], ["email", "remedios_terry@torp.org"], ["address", "Apt. 890 3530 Alan River, South Alesia, ND 33347-7679"], ["contact", "+809 (938) 676-5721"], ["created_at", "2022-12-01 11:42:09.078383"], ["updated_at", "2022-12-01 11:42:09.078383"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lazaro.mertz@weissnat.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+678 1-943-464-7261"], ["LIMIT", 1]]
+  [1m[36mUser Create (6.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Flossie Considine Bednar"], ["email", "lazaro.mertz@weissnat.biz"], ["address", "Apt. 230 3430 Thiel Green, Karryborough, ND 58295-7674"], ["contact", "+678 1-943-464-7261"], ["created_at", "2022-12-01 11:42:09.131902"], ["updated_at", "2022-12-01 11:42:09.131902"]]
+  [1m[36mTRANSACTION (24.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lashawna.veum@hirthe.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+1-939 (489) 145-0251"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kelley Bruen Kertzmann"], ["email", "lashawna.veum@hirthe.io"], ["address", "7508 Elna Ferry, Lake Lawrencestad, WV 77876"], ["contact", "+1-939 (489) 145-0251"], ["created_at", "2022-12-01 11:42:09.190864"], ["updated_at", "2022-12-01 11:42:09.190864"]]
+  [1m[36mTRANSACTION (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dora@boyle.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+92 264.329.5496"], ["LIMIT", 1]]
+  [1m[36mUser Create (6.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dr. Ciera Stroman Kiehn"], ["email", "dora@boyle.net"], ["address", "2388 Odessa Parkways, Rosiaside, AR 22748-3192"], ["contact", "+92 264.329.5496"], ["created_at", "2022-12-01 11:42:09.236469"], ["updated_at", "2022-12-01 11:42:09.236469"]]
+  [1m[36mTRANSACTION (9.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "evita@hilpert.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+264 270.574.4266"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Karin Grant Upton MD"], ["email", "evita@hilpert.io"], ["address", "Apt. 138 41168 Christiansen Avenue, North Efrain, OR 88147-6418"], ["contact", "+264 270.574.4266"], ["created_at", "2022-12-01 11:42:09.281784"], ["updated_at", "2022-12-01 11:42:09.281784"]]
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lucius@berge.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+508 (701) 744-4306"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Rene Reichel Macejkovic"], ["email", "lucius@berge.com"], ["address", "21966 Shields Forks, Hahnhaven, IA 16378"], ["contact", "+508 (701) 744-4306"], ["created_at", "2022-12-01 11:42:09.319651"], ["updated_at", "2022-12-01 11:42:09.319651"]]
+  [1m[36mTRANSACTION (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "marion@conn.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+231 (511) 207-9750"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Fr. Antionette Brekke Schmitt"], ["email", "marion@conn.info"], ["address", "Apt. 999 7799 Fahey Burg, South Nettieland, CO 83103"], ["contact", "+231 (511) 207-9750"], ["created_at", "2022-12-01 11:42:09.366608"], ["updated_at", "2022-12-01 11:42:09.366608"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dexter@yost.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+233 754-300-8692"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Issac Abernathy Pfannerstill DVM"], ["email", "dexter@yost.info"], ["address", "Apt. 125 219 Jordan Glens, Lake Randystad, VT 83856-3416"], ["contact", "+233 754-300-8692"], ["created_at", "2022-12-01 11:42:09.403123"], ["updated_at", "2022-12-01 11:42:09.403123"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ellena_greenholt@heaney-hodkiewicz.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+238 (566) 340-3929"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Marlana Feeney Lakin"], ["email", "ellena_greenholt@heaney-hodkiewicz.info"], ["address", "Apt. 445 301 Jeanmarie Motorway, O'Connellshire, WI 25651"], ["contact", "+238 (566) 340-3929"], ["created_at", "2022-12-01 11:42:09.438944"], ["updated_at", "2022-12-01 11:42:09.438944"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jerrod_parker@stroman.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+852 725.704.2692"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tiffiny Russel O'Keefe"], ["email", "jerrod_parker@stroman.info"], ["address", "Apt. 561 831 Darius Bypass, Vernicetown, NV 62925"], ["contact", "+852 725.704.2692"], ["created_at", "2022-12-01 11:42:09.474244"], ["updated_at", "2022-12-01 11:42:09.474244"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mckinley@langworth.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+262 1-842-944-6520"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Erich Stehr Effertz"], ["email", "mckinley@langworth.info"], ["address", "Apt. 691 74859 Jenkins Station, Port Lane, WY 74792-1749"], ["contact", "+262 1-842-944-6520"], ["created_at", "2022-12-01 11:42:09.500367"], ["updated_at", "2022-12-01 11:42:09.500367"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "virgilio_dach@haley.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+54 (432) 776-6657"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dalton Swift Fisher"], ["email", "virgilio_dach@haley.co"], ["address", "Apt. 704 441 Blossom Spring, Port William, NH 24226-6575"], ["contact", "+54 (432) 776-6657"], ["created_at", "2022-12-01 11:42:09.529496"], ["updated_at", "2022-12-01 11:42:09.529496"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "clayton@renner-collins.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+1-284 722-467-3415"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Pres. Cher Fritsch Reinger"], ["email", "clayton@renner-collins.info"], ["address", "Apt. 682 4912 Christoper Pines, North Arnitastad, MN 85970"], ["contact", "+1-284 722-467-3415"], ["created_at", "2022-12-01 11:42:09.551592"], ["updated_at", "2022-12-01 11:42:09.551592"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "numbers.lang@lemke-wisoky.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+853 (922) 852-1271"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neal Dooley Maggio"], ["email", "numbers.lang@lemke-wisoky.org"], ["address", "8535 Rippin Rue, West Reinaldoberg, GA 50669-8687"], ["contact", "+853 (922) 852-1271"], ["created_at", "2022-12-01 11:42:09.589014"], ["updated_at", "2022-12-01 11:42:09.589014"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lucina_kessler@harber-auer.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+39 343-103-3126"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kenneth Krajcik Bernier"], ["email", "lucina_kessler@harber-auer.net"], ["address", "Apt. 736 58729 Alvin Mountains, Lake Mikehaven, MN 88361"], ["contact", "+39 343-103-3126"], ["created_at", "2022-12-01 11:42:09.620500"], ["updated_at", "2022-12-01 11:42:09.620500"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "corey@schuppe.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+356 870-215-6976"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dot Hermiston Schowalter"], ["email", "corey@schuppe.org"], ["address", "Suite 609 8424 Renato Square, East Luanatown, CT 09386"], ["contact", "+356 870-215-6976"], ["created_at", "2022-12-01 11:42:09.650422"], ["updated_at", "2022-12-01 11:42:09.650422"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "berta@bayer.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+56 1-590-391-1629"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Donnette Wilderman Kshlerin"], ["email", "berta@bayer.com"], ["address", "38147 Royce Underpass, Abernathytown, OR 98348"], ["contact", "+56 1-590-391-1629"], ["created_at", "2022-12-01 11:42:09.675041"], ["updated_at", "2022-12-01 11:42:09.675041"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ammie@wisozk-oconnell.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+56 292-356-2701"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Roseline Jerde Kreiger"], ["email", "ammie@wisozk-oconnell.org"], ["address", "1498 Dickens Course, Zboncakmouth, NH 13448"], ["contact", "+56 292-356-2701"], ["created_at", "2022-12-01 11:42:09.695517"], ["updated_at", "2022-12-01 11:42:09.695517"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "collette_upton@denesik-ledner.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+1-671 262.145.6215"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Hon. Zackary Mann Heathcote"], ["email", "collette_upton@denesik-ledner.info"], ["address", "Apt. 256 70072 Nolan Isle, North Cliffordberg, AR 69124"], ["contact", "+1-671 262.145.6215"], ["created_at", "2022-12-01 11:42:09.723830"], ["updated_at", "2022-12-01 11:42:09.723830"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "colette@shields.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+1-671 171.570.0977"], ["LIMIT", 1]]
+  [1m[36mUser Create (9.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Santiago Veum Brekke"], ["email", "colette@shields.info"], ["address", "75170 Cartwright Lights, South Reginiaton, NC 74062"], ["contact", "+1-671 171.570.0977"], ["created_at", "2022-12-01 11:42:09.761469"], ["updated_at", "2022-12-01 11:42:09.761469"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "columbus_jerde@daniel.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+688 345.529.1566"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Maribeth Christiansen Greenfelder"], ["email", "columbus_jerde@daniel.biz"], ["address", "71092 Leonardo Landing, New Odellside, WI 19186"], ["contact", "+688 345.529.1566"], ["created_at", "2022-12-01 11:42:09.808140"], ["updated_at", "2022-12-01 11:42:09.808140"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alesia_olson@kuhlman.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+359 689-155-7510"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nicole Kautzer Will"], ["email", "alesia_olson@kuhlman.biz"], ["address", "Apt. 164 7846 Jerde Fields, Arronborough, NE 07338-5089"], ["contact", "+359 689-155-7510"], ["created_at", "2022-12-01 11:42:09.835467"], ["updated_at", "2022-12-01 11:42:09.835467"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "assunta@ebert.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+95 1-284-370-6914"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tracey Hammes Streich"], ["email", "assunta@ebert.co"], ["address", "Suite 197 63951 Lavinia Fields, Leannonside, NJ 26057-7698"], ["contact", "+95 1-284-370-6914"], ["created_at", "2022-12-01 11:42:09.871491"], ["updated_at", "2022-12-01 11:42:09.871491"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dave@osinski-will.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+809 297.657.3928"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Arnulfo Borer DuBuque Jr."], ["email", "dave@osinski-will.com"], ["address", "Apt. 559 696 Fredia Valley, Bechtelartown, LA 48843"], ["contact", "+809 297.657.3928"], ["created_at", "2022-12-01 11:42:09.908688"], ["updated_at", "2022-12-01 11:42:09.908688"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "louann.thompson@ullrich-medhurst.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+809 748.464.7643"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Hon. Corrine Doyle O'Conner"], ["email", "louann.thompson@ullrich-medhurst.net"], ["address", "Apt. 194 437 Meridith Spring, Ondrickafort, KY 96748-4249"], ["contact", "+809 748.464.7643"], ["created_at", "2022-12-01 11:42:09.940475"], ["updated_at", "2022-12-01 11:42:09.940475"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fatimah_kreiger@kertzmann-torphy.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+258 (732) 094-5608"], ["LIMIT", 1]]
+  [1m[36mUser Create (9.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Henry Lynch O'Hara"], ["email", "fatimah_kreiger@kertzmann-torphy.io"], ["address", "583 Marvin Overpass, Lake Georgeshire, WV 16188-3424"], ["contact", "+258 (732) 094-5608"], ["created_at", "2022-12-01 11:42:09.978916"], ["updated_at", "2022-12-01 11:42:09.978916"]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexis.schowalter@greenholt.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+977 607-018-8889"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Granville Blick Hamill VM"], ["email", "alexis.schowalter@greenholt.co"], ["address", "Apt. 141 684 Davis Field, South Lilliam, PA 95779"], ["contact", "+977 607-018-8889"], ["created_at", "2022-12-01 11:42:10.042052"], ["updated_at", "2022-12-01 11:42:10.042052"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lakeisha@mraz.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+230 1-344-638-5652"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Randy Pollich Vandervort"], ["email", "lakeisha@mraz.net"], ["address", "5302 Santos Corners, Torymouth, AL 99393"], ["contact", "+230 1-344-638-5652"], ["created_at", "2022-12-01 11:42:10.106424"], ["updated_at", "2022-12-01 11:42:10.106424"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jason_kunze@barrows.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+261 214-681-9095"], ["LIMIT", 1]]
+  [1m[36mUser Create (6.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Amb. Barb Lakin Will"], ["email", "jason_kunze@barrows.co"], ["address", "5769 Kacy Expressway, West Dirk, NC 79116"], ["contact", "+261 214-681-9095"], ["created_at", "2022-12-01 11:42:10.152582"], ["updated_at", "2022-12-01 11:42:10.152582"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "annamae.zboncak@stamm.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+241 1-306-469-1196"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Amb. Gerald Walter Aufderhar"], ["email", "annamae.zboncak@stamm.co"], ["address", "Apt. 770 6626 Ward Circles, West Rickie, VA 23924-1373"], ["contact", "+241 1-306-469-1196"], ["created_at", "2022-12-01 11:42:10.199597"], ["updated_at", "2022-12-01 11:42:10.199597"]]
+  [1m[36mTRANSACTION (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "willetta@heathcote.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+40 1-223-637-8189"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tesha Daniel Spinka"], ["email", "willetta@heathcote.io"], ["address", "Suite 793 93981 Huel Throughway, New Eura, AR 95183-1029"], ["contact", "+40 1-223-637-8189"], ["created_at", "2022-12-01 11:42:10.251353"], ["updated_at", "2022-12-01 11:42:10.251353"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "son.hessel@ruecker.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+996 (680) 728-7710"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Jude Gleichner Koss"], ["email", "son.hessel@ruecker.net"], ["address", "2194 Harris Ville, Emeryshire, HI 35816"], ["contact", "+996 (680) 728-7710"], ["created_at", "2022-12-01 11:42:10.289780"], ["updated_at", "2022-12-01 11:42:10.289780"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wilmer_jacobs@williamson-kulas.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+238 (342) 688-0607"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Gov. Chi Bednar Prohaska"], ["email", "wilmer_jacobs@williamson-kulas.io"], ["address", "Apt. 937 131 Lueilwitz Garden, Eviemouth, VA 26373-4025"], ["contact", "+238 (342) 688-0607"], ["created_at", "2022-12-01 11:42:10.316821"], ["updated_at", "2022-12-01 11:42:10.316821"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "solange@schmitt-mayer.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+236 833-350-4442"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Norbert Hettinger Zulauf"], ["email", "solange@schmitt-mayer.info"], ["address", "Apt. 163 657 Wilderman Fork, New Cherriside, NY 97580-9771"], ["contact", "+236 833-350-4442"], ["created_at", "2022-12-01 11:42:10.347884"], ["updated_at", "2022-12-01 11:42:10.347884"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chad.sipes@kozey.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+691 868.024.1011"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yadira Swift Hauck"], ["email", "chad.sipes@kozey.org"], ["address", "Suite 490 69112 Sunni Motorway, Koelpinshire, WY 54545-1389"], ["contact", "+691 868.024.1011"], ["created_at", "2022-12-01 11:42:10.377828"], ["updated_at", "2022-12-01 11:42:10.377828"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "julio_ohara@mclaughlin.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+809 463.625.3762"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Drew Greenholt Stehr"], ["email", "julio_ohara@mclaughlin.org"], ["address", "Apt. 325 9694 Zora Stream, South Ettie, MN 92340-5497"], ["contact", "+809 463.625.3762"], ["created_at", "2022-12-01 11:42:10.407562"], ["updated_at", "2022-12-01 11:42:10.407562"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "olin.koelpin@stokes.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+374 1-244-730-0358"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Jordon Kerluke Schmeler"], ["email", "olin.koelpin@stokes.co"], ["address", "47638 Hane Forks, Selenahaven, MA 89225-8218"], ["contact", "+374 1-244-730-0358"], ["created_at", "2022-12-01 11:42:10.432337"], ["updated_at", "2022-12-01 11:42:10.432337"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "abdul@oberbrunner-hagenes.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+65 260-448-8075"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Joe Buckridge Lang"], ["email", "abdul@oberbrunner-hagenes.info"], ["address", "Suite 933 6237 Palmer Parkways, Spinkachester, PA 84160-9303"], ["contact", "+65 260-448-8075"], ["created_at", "2022-12-01 11:42:10.449903"], ["updated_at", "2022-12-01 11:42:10.449903"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gabriel.gibson@grady.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+977 1-902-849-8999"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nena Yost Kuhn"], ["email", "gabriel.gibson@grady.name"], ["address", "Suite 476 47846 Art Ramp, Port Laquanda, LA 13870-3201"], ["contact", "+977 1-902-849-8999"], ["created_at", "2022-12-01 11:42:10.470520"], ["updated_at", "2022-12-01 11:42:10.470520"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eliseo@hayes.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+977 (276) 614-1614"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Diann Murphy Friesen Sr."], ["email", "eliseo@hayes.co"], ["address", "58503 Trantow Gateway, Daughertyberg, FL 40242-1097"], ["contact", "+977 (276) 614-1614"], ["created_at", "2022-12-01 11:42:10.492976"], ["updated_at", "2022-12-01 11:42:10.492976"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nella.rowe@hoeger-kilback.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+378 357.063.9993"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Anastasia Deckow Volkman LLD"], ["email", "nella.rowe@hoeger-kilback.net"], ["address", "Apt. 370 175 Rodriguez River, Nickyburgh, OK 29430-4893"], ["contact", "+378 357.063.9993"], ["created_at", "2022-12-01 11:42:10.510856"], ["updated_at", "2022-12-01 11:42:10.510856"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "claretta_harris@kertzmann-lubowitz.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+976 782-331-7814"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Quincy McKenzie Welch"], ["email", "claretta_harris@kertzmann-lubowitz.com"], ["address", "82511 Kyle Place, West Mickey, ND 50843"], ["contact", "+976 782-331-7814"], ["created_at", "2022-12-01 11:42:10.530701"], ["updated_at", "2022-12-01 11:42:10.530701"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lonny.wisoky@ullrich.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+960 252.982.7946"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bridget Schinner Walker"], ["email", "lonny.wisoky@ullrich.io"], ["address", "463 Catrina Port, New Mariannaview, MI 87465"], ["contact", "+960 252.982.7946"], ["created_at", "2022-12-01 11:42:10.548811"], ["updated_at", "2022-12-01 11:42:10.548811"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lucius.jaskolski@sipes.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+974 (413) 014-7270"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Antoinette Langosh Toy"], ["email", "lucius.jaskolski@sipes.biz"], ["address", "Suite 479 529 Rutherford Lodge, O'Konfurt, CT 31301"], ["contact", "+974 (413) 014-7270"], ["created_at", "2022-12-01 11:42:10.566309"], ["updated_at", "2022-12-01 11:42:10.566309"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gregory@gleason.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+856 1-566-471-0061"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Hon. Micheal Thompson Upton"], ["email", "gregory@gleason.org"], ["address", "59825 Breana Wells, Yongberg, CT 22478"], ["contact", "+856 1-566-471-0061"], ["created_at", "2022-12-01 11:42:10.584068"], ["updated_at", "2022-12-01 11:42:10.584068"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "numbers.yost@schulist-kessler.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+591 1-183-978-2508"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kevin Schimmel Yundt LLD"], ["email", "numbers.yost@schulist-kessler.co"], ["address", "Apt. 342 2853 Dickens Light, Larsonstad, RI 99533"], ["contact", "+591 1-183-978-2508"], ["created_at", "2022-12-01 11:42:10.601152"], ["updated_at", "2022-12-01 11:42:10.601152"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jackqueline@halvorson.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+972 670-716-7449"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Barney Conroy Funk V"], ["email", "jackqueline@halvorson.org"], ["address", "77371 Tawanda Landing, West Cliffstad, PA 98694-6561"], ["contact", "+972 670-716-7449"], ["created_at", "2022-12-01 11:42:10.620487"], ["updated_at", "2022-12-01 11:42:10.620487"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "santos@walter.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+61 (907) 577-2720"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Delmer Swift Torphy"], ["email", "santos@walter.com"], ["address", "Apt. 637 56133 Harvey Springs, Ivaborough, DE 08994-5054"], ["contact", "+61 (907) 577-2720"], ["created_at", "2022-12-01 11:42:10.640073"], ["updated_at", "2022-12-01 11:42:10.640073"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eduardo_connelly@howell.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+226 694.458.6261"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Rep. Rudy Batz Metz"], ["email", "eduardo_connelly@howell.com"], ["address", "723 Vinita Street, Port Ronnimouth, LA 25921-5887"], ["contact", "+226 694.458.6261"], ["created_at", "2022-12-01 11:42:10.662766"], ["updated_at", "2022-12-01 11:42:10.662766"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "randell.kassulke@labadie.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+809 1-733-089-5793"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Christopher Hackett Kemmer"], ["email", "randell.kassulke@labadie.com"], ["address", "Suite 539 3047 Lionel Stream, Murraymouth, MD 08942"], ["contact", "+809 1-733-089-5793"], ["created_at", "2022-12-01 11:42:10.683597"], ["updated_at", "2022-12-01 11:42:10.683597"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thurman@metz.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+64 1-209-300-5522"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Mari Mante Adams"], ["email", "thurman@metz.org"], ["address", "Suite 358 4521 Raymond Light, Nikolausfurt, OK 88398-4317"], ["contact", "+64 1-209-300-5522"], ["created_at", "2022-12-01 11:42:10.712229"], ["updated_at", "2022-12-01 11:42:10.712229"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lucio_kirlin@vandervort.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+971 1-460-547-8496"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Douglas Koelpin Smith"], ["email", "lucio_kirlin@vandervort.com"], ["address", "Apt. 953 9298 Janae Lodge, South Kenneth, MI 01387-8547"], ["contact", "+971 1-460-547-8496"], ["created_at", "2022-12-01 11:42:10.745859"], ["updated_at", "2022-12-01 11:42:10.745859"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "royal@murray.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+212 1-967-274-0493"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Fidel Corwin Littel"], ["email", "royal@murray.biz"], ["address", "7754 Stracke Plaza, Jaskolskiberg, UT 28827"], ["contact", "+212 1-967-274-0493"], ["created_at", "2022-12-01 11:42:10.778242"], ["updated_at", "2022-12-01 11:42:10.778242"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "duncan@gusikowski.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+265 (883) 433-7532"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nathanial Bailey Herzog"], ["email", "duncan@gusikowski.name"], ["address", "Apt. 580 88130 Bauch Summit, New Lovella, SC 55790"], ["contact", "+265 (883) 433-7532"], ["created_at", "2022-12-01 11:42:10.806501"], ["updated_at", "2022-12-01 11:42:10.806501"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "olivia@kub.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+268 1-927-737-6919"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Michel Beer Ferry"], ["email", "olivia@kub.net"], ["address", "Apt. 963 81813 Sipes Lane, East Rocky, VT 09809-4004"], ["contact", "+268 1-927-737-6919"], ["created_at", "2022-12-01 11:42:10.841606"], ["updated_at", "2022-12-01 11:42:10.841606"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "darnell_wunsch@stiedemann-rempel.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+229 896-423-0173"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dorthey Kuvalis Deckow DDS"], ["email", "darnell_wunsch@stiedemann-rempel.com"], ["address", "Suite 925 7223 Bret Ville, New Gavinland, CA 19967"], ["contact", "+229 896-423-0173"], ["created_at", "2022-12-01 11:42:10.867804"], ["updated_at", "2022-12-01 11:42:10.867804"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vilma_tromp@damore.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+1-787 1-756-879-2666"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ms. Ashanti Prohaska Altenwerth"], ["email", "vilma_tromp@damore.com"], ["address", "453 Dalton Center, Lake Lakesha, LA 81528-9519"], ["contact", "+1-787 1-756-879-2666"], ["created_at", "2022-12-01 11:42:10.896902"], ["updated_at", "2022-12-01 11:42:10.896902"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aron@hills.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+33 317.194.9338"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Peggy Hyatt Conn"], ["email", "aron@hills.com"], ["address", "Suite 859 59788 Wuckert Knolls, Edhaven, ID 69905-9429"], ["contact", "+33 317.194.9338"], ["created_at", "2022-12-01 11:42:10.930555"], ["updated_at", "2022-12-01 11:42:10.930555"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "floria@homenick.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+98 (375) 054-9530"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Elroy Rohan Bartoletti"], ["email", "floria@homenick.com"], ["address", "962 Dibbert Place, Thompsonborough, NH 54477-9033"], ["contact", "+98 (375) 054-9530"], ["created_at", "2022-12-01 11:42:10.960860"], ["updated_at", "2022-12-01 11:42:10.960860"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "daryl@moore.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+233 1-737-625-1114"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Robbie Parisian Luettgen"], ["email", "daryl@moore.biz"], ["address", "6909 Denesik Locks, Heathcoteville, SD 15434-7054"], ["contact", "+233 1-737-625-1114"], ["created_at", "2022-12-01 11:42:10.983542"], ["updated_at", "2022-12-01 11:42:10.983542"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "joan@veum-kunde.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+249 1-260-956-0500"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Mrs. Humberto Sawayn Fisher"], ["email", "joan@veum-kunde.com"], ["address", "Apt. 641 4461 Oscar Flat, New Codyton, SC 60820-2671"], ["contact", "+249 1-260-956-0500"], ["created_at", "2022-12-01 11:42:11.022985"], ["updated_at", "2022-12-01 11:42:11.022985"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "king@padberg-koss.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+265 277.978.0491"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nicholle Deckow Bergnaum"], ["email", "king@padberg-koss.info"], ["address", "Suite 853 539 Carisa Mill, Billieside, AL 47676"], ["contact", "+265 277.978.0491"], ["created_at", "2022-12-01 11:42:11.049704"], ["updated_at", "2022-12-01 11:42:11.049704"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "annita@prohaska.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+95 (859) 121-7656"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Margene Dicki O'Conner"], ["email", "annita@prohaska.biz"], ["address", "675 Daugherty Oval, North Lynette, WV 72402"], ["contact", "+95 (859) 121-7656"], ["created_at", "2022-12-01 11:42:11.079860"], ["updated_at", "2022-12-01 11:42:11.079860"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jacques_franecki@jast-considine.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+672 1-324-793-4067"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Fr. Kory Yost Jast"], ["email", "jacques_franecki@jast-considine.org"], ["address", "9555 Haley Ferry, East Meghantown, FL 43662"], ["contact", "+672 1-324-793-4067"], ["created_at", "2022-12-01 11:42:11.099610"], ["updated_at", "2022-12-01 11:42:11.099610"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lavera@bode.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+268 1-980-232-0437"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Shon Schulist Parker V"], ["email", "lavera@bode.biz"], ["address", "663 Beier Canyon, Mireyaport, NH 62411-8923"], ["contact", "+268 1-980-232-0437"], ["created_at", "2022-12-01 11:42:11.123904"], ["updated_at", "2022-12-01 11:42:11.123904"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan_prosacco@treutel-konopelski.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+686 1-444-936-0866"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Carrol Robel Bode VM"], ["email", "alan_prosacco@treutel-konopelski.net"], ["address", "786 Daniel Mill, Port Maurice, MD 46099"], ["contact", "+686 1-444-936-0866"], ["created_at", "2022-12-01 11:42:11.146063"], ["updated_at", "2022-12-01 11:42:11.146063"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "edmund@anderson.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+964 (625) 145-7578"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Benito Schimmel Cormier"], ["email", "edmund@anderson.info"], ["address", "288 Swaniawski Locks, Nathanaelside, OH 48002-8696"], ["contact", "+964 (625) 145-7578"], ["created_at", "2022-12-01 11:42:11.169018"], ["updated_at", "2022-12-01 11:42:11.169018"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dreama@lemke-crona.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+685 1-517-837-4974"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Luigi Daugherty Bernhard"], ["email", "dreama@lemke-crona.name"], ["address", "23581 Schiller Fields, Ngocton, LA 61263-1736"], ["contact", "+685 1-517-837-4974"], ["created_at", "2022-12-01 11:42:11.195455"], ["updated_at", "2022-12-01 11:42:11.195455"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "bernetta@vonrueden.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+264 1-906-912-0753"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Shanika Wyman Hane"], ["email", "bernetta@vonrueden.co"], ["address", "246 Watsica Via, Johnniemouth, NC 54412"], ["contact", "+264 1-906-912-0753"], ["created_at", "2022-12-01 11:42:11.218386"], ["updated_at", "2022-12-01 11:42:11.218386"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mozella_nikolaus@padberg.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+233 1-424-751-8335"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Omer Dach Dooley"], ["email", "mozella_nikolaus@padberg.co"], ["address", "85048 Hartmann Ford, Abshiretown, OK 78994"], ["contact", "+233 1-424-751-8335"], ["created_at", "2022-12-01 11:42:11.246494"], ["updated_at", "2022-12-01 11:42:11.246494"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "laticia_ledner@keebler-oberbrunner.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+507 443.587.1462"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Virgilio Wiza Marks"], ["email", "laticia_ledner@keebler-oberbrunner.net"], ["address", "829 Tomasa Estates, Ranaechester, ME 98799"], ["contact", "+507 443.587.1462"], ["created_at", "2022-12-01 11:42:11.274701"], ["updated_at", "2022-12-01 11:42:11.274701"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "florencio_kessler@thompson.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+856 1-338-883-2977"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yan Purdy Heller"], ["email", "florencio_kessler@thompson.org"], ["address", "Apt. 414 426 Morar Flat, Lake Auroraburgh, TN 42274-1792"], ["contact", "+856 1-338-883-2977"], ["created_at", "2022-12-01 11:42:11.317527"], ["updated_at", "2022-12-01 11:42:11.317527"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ollie_daniel@blick.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+592 604-628-4261"], ["LIMIT", 1]]
+  [1m[36mUser Create (14.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Val Kovacek MacGyver"], ["email", "ollie_daniel@blick.io"], ["address", "941 Simon Ridge, Scottychester, NM 25314"], ["contact", "+592 604-628-4261"], ["created_at", "2022-12-01 11:42:11.351067"], ["updated_at", "2022-12-01 11:42:11.351067"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "joette.kassulke@hermann.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+501 (882) 847-3180"], ["LIMIT", 1]]
+  [1m[36mUser Create (8.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "King Tremblay Treutel"], ["email", "joette.kassulke@hermann.io"], ["address", "44814 Kessler Union, New Chancechester, MD 18266-9868"], ["contact", "+501 (882) 847-3180"], ["created_at", "2022-12-01 11:42:11.412418"], ["updated_at", "2022-12-01 11:42:11.412418"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "carmelo@wilderman.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+233 736-294-9263"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Gov. Hubert Morar McKenzie"], ["email", "carmelo@wilderman.name"], ["address", "9678 Edward Rue, Ashaville, PA 63067"], ["contact", "+233 736-294-9263"], ["created_at", "2022-12-01 11:42:11.460822"], ["updated_at", "2022-12-01 11:42:11.460822"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "berenice_kessler@jaskolski-christiansen.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+598 (493) 272-1628"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Willy Ruecker Lockman"], ["email", "berenice_kessler@jaskolski-christiansen.net"], ["address", "Apt. 221 36020 Athena Way, Lake Eda, SD 31315-3978"], ["contact", "+598 (493) 272-1628"], ["created_at", "2022-12-01 11:42:11.502273"], ["updated_at", "2022-12-01 11:42:11.502273"]]
+  [1m[36mTRANSACTION (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "terence@franecki.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+51 1-123-389-8739"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cody Bayer Morar Jr."], ["email", "terence@franecki.com"], ["address", "20865 Halvorson Village, Port Heriberto, NM 94111"], ["contact", "+51 1-123-389-8739"], ["created_at", "2022-12-01 11:42:11.538301"], ["updated_at", "2022-12-01 11:42:11.538301"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sandy@bergstrom.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+594 (354) 940-5615"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sen. Sheldon White Heaney"], ["email", "sandy@bergstrom.net"], ["address", "Apt. 430 44862 Oscar Pine, Lake Estellefurt, NV 21117"], ["contact", "+594 (354) 940-5615"], ["created_at", "2022-12-01 11:42:11.583449"], ["updated_at", "2022-12-01 11:42:11.583449"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jae@krajcik-hahn.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+32 835-427-0316"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Blaine Grant Schoen"], ["email", "jae@krajcik-hahn.biz"], ["address", "Suite 744 771 Padberg Shoal, Leannonborough, NJ 01565"], ["contact", "+32 835-427-0316"], ["created_at", "2022-12-01 11:42:11.628118"], ["updated_at", "2022-12-01 11:42:11.628118"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "keith.greenholt@cassin-schultz.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+220 893-243-9785"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Blair Witting Ortiz"], ["email", "keith.greenholt@cassin-schultz.info"], ["address", "Suite 510 365 Vandervort Skyway, Wildermanfort, MS 88187"], ["contact", "+220 893-243-9785"], ["created_at", "2022-12-01 11:42:11.660770"], ["updated_at", "2022-12-01 11:42:11.660770"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hank_lockman@pfannerstill-wolf.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+692 911.686.6582"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Azucena Luettgen Mayert"], ["email", "hank_lockman@pfannerstill-wolf.net"], ["address", "Suite 638 74224 Thu Spur, North Mariefort, NM 06471-1685"], ["contact", "+692 911.686.6582"], ["created_at", "2022-12-01 11:42:11.687679"], ["updated_at", "2022-12-01 11:42:11.687679"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tegan@conn.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+233 (886) 570-5487"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Pierre Kris McClure"], ["email", "tegan@conn.io"], ["address", "22298 Elouise Points, Murphymouth, OR 78692-2636"], ["contact", "+233 (886) 570-5487"], ["created_at", "2022-12-01 11:42:11.710781"], ["updated_at", "2022-12-01 11:42:11.710781"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kaleigh.glover@gleason-wyman.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+66 940-097-0207"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bethann Johnson Reichert"], ["email", "kaleigh.glover@gleason-wyman.info"], ["address", "3892 Francisco Wall, South Zachery, VA 89334-8325"], ["contact", "+66 940-097-0207"], ["created_at", "2022-12-01 11:42:11.732154"], ["updated_at", "2022-12-01 11:42:11.732154"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "karolyn@yost.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+49 689.510.8469"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Wilford Gorczany Bechtelar Esq."], ["email", "karolyn@yost.co"], ["address", "Suite 721 953 Cartwright Garden, West Paris, FL 89756-5355"], ["contact", "+49 689.510.8469"], ["created_at", "2022-12-01 11:42:11.762564"], ["updated_at", "2022-12-01 11:42:11.762564"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "shaun@dietrich-gutmann.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+386 256.327.5252"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Rep. Herman Spencer Hodkiewicz"], ["email", "shaun@dietrich-gutmann.biz"], ["address", "Suite 405 65690 Jetta Causeway, West Ozzie, ID 16880-4657"], ["contact", "+386 256.327.5252"], ["created_at", "2022-12-01 11:42:11.794430"], ["updated_at", "2022-12-01 11:42:11.794430"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lino_grant@toy-block.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+57 (264) 894-3485"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Eduardo Russel Okuneva LLD"], ["email", "lino_grant@toy-block.org"], ["address", "3223 Belkis Haven, Boyerchester, TX 97299-0011"], ["contact", "+57 (264) 894-3485"], ["created_at", "2022-12-01 11:42:11.820763"], ["updated_at", "2022-12-01 11:42:11.820763"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hien@vandervort.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+243 847.679.7463"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Orville Buckridge Carter"], ["email", "hien@vandervort.co"], ["address", "Suite 847 59536 O'Conner Roads, East Patricafort, FL 08643-1476"], ["contact", "+243 847.679.7463"], ["created_at", "2022-12-01 11:42:11.850082"], ["updated_at", "2022-12-01 11:42:11.850082"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jermaine.murray@walker-moore.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+599 609.181.8448"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Msgr. Royce Towne Purdy"], ["email", "jermaine.murray@walker-moore.biz"], ["address", "27838 McCullough Village, Millsland, MI 79415"], ["contact", "+599 609.181.8448"], ["created_at", "2022-12-01 11:42:11.878839"], ["updated_at", "2022-12-01 11:42:11.878839"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "walter@price.net"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+1-242 104-644-9914"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nora Donnelly Abernathy"], ["email", "walter@price.net"], ["address", "Suite 544 63777 Harris Ridges, Raynormouth, RI 62183"], ["contact", "+1-242 104-644-9914"], ["created_at", "2022-12-01 11:42:11.903575"], ["updated_at", "2022-12-01 11:42:11.903575"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "donnell.mayert@marvin.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+993 1-312-955-8940"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lawana Fisher Bechtelar MD"], ["email", "donnell.mayert@marvin.io"], ["address", "Suite 793 5540 Williamson Islands, West Winifred, VT 74419"], ["contact", "+993 1-312-955-8940"], ["created_at", "2022-12-01 11:42:11.927843"], ["updated_at", "2022-12-01 11:42:11.927843"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "zackary@dooley.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+355 253.486.3801"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bobbie Haley Pouros"], ["email", "zackary@dooley.info"], ["address", "20776 Abernathy Village, North Joye, ID 92317"], ["contact", "+355 253.486.3801"], ["created_at", "2022-12-01 11:42:11.956811"], ["updated_at", "2022-12-01 11:42:11.956811"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rubin.pacocha@watsica.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+850 1-805-830-6675"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tobias DuBuque Kassulke"], ["email", "rubin.pacocha@watsica.info"], ["address", "40429 Hisako Islands, Belenside, VT 42606-4705"], ["contact", "+850 1-805-830-6675"], ["created_at", "2022-12-01 11:42:11.982604"], ["updated_at", "2022-12-01 11:42:11.982604"]]
+  [1m[36mTRANSACTION (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "breanna@emard.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+298 1-129-133-7738"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sandra Bode Stamm"], ["email", "breanna@emard.io"], ["address", "Suite 529 2342 Feil Forges, New Janiseport, AK 86566-7240"], ["contact", "+298 1-129-133-7738"], ["created_at", "2022-12-01 11:42:12.026087"], ["updated_at", "2022-12-01 11:42:12.026087"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "charissa@witting-ferry.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+977 523.761.7162"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Daron Treutel Runolfsson"], ["email", "charissa@witting-ferry.org"], ["address", "Apt. 117 1180 Janetta Loop, South Melindafort, OH 56938-6520"], ["contact", "+977 523.761.7162"], ["created_at", "2022-12-01 11:42:12.054844"], ["updated_at", "2022-12-01 11:42:12.054844"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "silas@wiegand-heller.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+256 1-301-425-3785"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Julio Nolan Buckridge"], ["email", "silas@wiegand-heller.info"], ["address", "7103 Ruecker Highway, Lake Mardellburgh, AL 82302-4170"], ["contact", "+256 1-301-425-3785"], ["created_at", "2022-12-01 11:42:12.084622"], ["updated_at", "2022-12-01 11:42:12.084622"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elwood@bruen.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."contact" = ? LIMIT ?[0m  [["contact", "+60 667.246.2174"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "contact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Hon. Yang Ortiz Schinner"], ["email", "elwood@bruen.com"], ["address", "Suite 964 7341 Cristopher Wall, Rickeybury, CA 31791"], ["contact", "+60 667.246.2174"], ["created_at", "2022-12-01 11:42:12.105868"], ["updated_at", "2022-12-01 11:42:12.105868"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:13:26 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 56.1ms | Allocations: 22008)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 135)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 62.0ms | Allocations: 23722)
+Completed 200 OK in 88ms (Views: 65.8ms | ActiveRecord: 2.2ms | Allocations: 27684)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:35:08 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 61.2ms | Allocations: 18167)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 19616)
+Completed 200 OK in 74ms (Views: 72.0ms | ActiveRecord: 2.1ms | Allocations: 20894)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:37:49 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 46.2ms | Allocations: 17366)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 18815)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 1.5ms | Allocations: 20042)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:37:53 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 59.5ms | Allocations: 16854)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 17573)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 1.1ms | Allocations: 18025)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:39:53 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 58.7ms | Allocations: 17358)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 18814)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 0.6ms | Allocations: 19971)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:44:46 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 48.1ms | Allocations: 17360)
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 18810)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.7ms | Allocations: 20026)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:45:10 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 54.0ms | Allocations: 17366)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 18815)
+Completed 200 OK in 69ms (Views: 64.5ms | ActiveRecord: 2.0ms | Allocations: 20042)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:45:34 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 62.7ms | Allocations: 17366)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 67.8ms | Allocations: 18815)
+Completed 200 OK in 77ms (Views: 68.8ms | ActiveRecord: 2.3ms | Allocations: 20042)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:47:58 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 8052)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 8143)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms | Allocations: 9341)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]
+Did you mean?  edit_user_url):
+    27:             </button>
+    28:             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+    29:               <li><%= link_to 'Show', user , class: "dropdown-item"%></li>
+    30:               <li><%= link_to 'Edit', edit_user_path , class: "dropdown-item"%></li>
+    31:               <li><%= link_to 'Destroy', user, method: :delete,data: { confirm: 'Are you sure?' }, class: "dropdown-item"%></li>
+    32:             </ul>
+    33:           </div>
+  
+app/views/users/index.html.erb:30
+app/views/users/index.html.erb:17
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:48:20 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (9.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 56.8ms | Allocations: 7101)
+  Rendered layout layouts/application.html.erb (Duration: 57.6ms | Allocations: 7183)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 9.7ms | Allocations: 8372)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `data' for #<ActionView::Base:0x00000000007eb8>):
+    28:             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+    29:               <li><%= link_to 'Show', user , class: "dropdown-item"%></li>
+    30:               <li><%= link_to 'Edit', edit_user_path(user) , class: "dropdown-item"%></li>
+    31:               <li><%= link_to 'Destroy', user, method: :delete,data: , class: "dropdown-item"%></li>
+    32:             </ul>
+    33:           </div>
+    34:         </td>
+  
+app/views/users/index.html.erb:31
+app/views/users/index.html.erb:17
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:48:58 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 54.9ms | Allocations: 20629)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 65.3ms | Allocations: 22081)
+Completed 200 OK in 78ms (Views: 72.8ms | ActiveRecord: 1.4ms | Allocations: 23300)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:49:12 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 68.4ms | Allocations: 20630)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 74.6ms | Allocations: 22085)
+Completed 200 OK in 85ms (Views: 80.7ms | ActiveRecord: 1.6ms | Allocations: 23297)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-12-01 17:49:17 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 406)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1181)
+Completed 200 OK in 44ms (Views: 7.5ms | ActiveRecord: 0.8ms | Allocations: 6524)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:54:21 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 49.8ms | Allocations: 20646)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 22094)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.5ms | Allocations: 23291)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:55:02 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 45.9ms | Allocations: 20640)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 139)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | Allocations: 22099)
+Completed 200 OK in 61ms (Views: 57.7ms | ActiveRecord: 1.0ms | Allocations: 23311)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:55:13 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 58.6ms | Allocations: 20639)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 135)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 22096)
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 1.5ms | Allocations: 23311)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:55:34 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 45.5ms | Allocations: 20642)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 50.4ms | Allocations: 22101)
+Completed 200 OK in 58ms (Views: 51.9ms | ActiveRecord: 0.7ms | Allocations: 23317)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:55:40 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 44.4ms | Allocations: 20118)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 20837)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.5ms | Allocations: 21288)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:55:46 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 48.8ms | Allocations: 20639)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 138)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 22098)
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 1.8ms | Allocations: 23258)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:56:03 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 52.8ms | Allocations: 20639)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 139)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 22098)
+Completed 200 OK in 75ms (Views: 69.6ms | ActiveRecord: 0.7ms | Allocations: 23310)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:56:22 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 44.3ms | Allocations: 20642)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 129)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 22094)
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 1.0ms | Allocations: 23310)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:56:32 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (Duration: 56.4ms | Allocations: 20639)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 22088)
+Completed 200 OK in 75ms (Views: 66.8ms | ActiveRecord: 3.1ms | Allocations: 23304)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:58:59 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered users/index.html.erb within layouts/application (Duration: 48.5ms | Allocations: 20658)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 22107)
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.5ms | Allocations: 23322)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:59:08 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (Duration: 46.4ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 57.1ms | Allocations: 22109)
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 0.6ms | Allocations: 23321)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 17:59:12 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 49.7ms | Allocations: 20657)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 22108)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.5ms | Allocations: 23324)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:01:53 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 44.7ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 129)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 22106)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 1.0ms | Allocations: 23322)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:01:54 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 481.8ms | Allocations: 282906)
+  Rendered users/new.html.erb within layouts/application (Duration: 483.7ms | Allocations: 283280)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 486.0ms | Allocations: 284051)
+Completed 200 OK in 489ms (Views: 486.9ms | ActiveRecord: 0.0ms | Allocations: 284692)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:02:19 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 11.7ms | Allocations: 1900)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2302)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 3731)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 4993)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:02:30 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.1ms | Allocations: 1901)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2297)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3724)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 4945)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:02:48 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.3ms | Allocations: 1917)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2313)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3740)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 4961)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:02:50 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 44.9ms | Allocations: 20549)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 21271)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 1.9ms | Allocations: 21847)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:03:06 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 69.5ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 76.9ms | Allocations: 22111)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.5ms | Allocations: 23268)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:04:21 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 46.2ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 132)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 22110)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.8ms | Allocations: 23325)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:04:34 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 41.4ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 22104)
+Completed 200 OK in 57ms (Views: 51.8ms | ActiveRecord: 1.0ms | Allocations: 23316)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:06:55 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 39.4ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 22104)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 1.0ms | Allocations: 23315)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:06:56 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 10.2ms | Allocations: 1837)
+  Rendered users/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 2208)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2925)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 3508)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:06:58 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 11.5ms | Allocations: 1352)
+  Rendered users/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 1476)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 2193)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 2593)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:07:01 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 49.0ms | Allocations: 20129)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 20848)
+Completed 200 OK in 57ms (Views: 52.2ms | ActiveRecord: 0.7ms | Allocations: 21248)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:09:38 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 46.5ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 22104)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.9ms | Allocations: 23260)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:09:43 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.1ms | Allocations: 1837)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 2219)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 2936)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 3518)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:09:49 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 11.1ms | Allocations: 1917)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 2339)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3766)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 4930)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-12-01 18:10:26 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.0ms | Allocations: 1984)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2337)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 3764)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 4985)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:10:30 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 257)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1107)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 2249)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-12-01 18:10:36 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 65.0ms | Allocations: 20558)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 21277)
+Completed 200 OK in 73ms (Views: 67.9ms | ActiveRecord: 1.6ms | Allocations: 21863)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-12-01 18:12:21 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 41.7ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 22104)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.6ms | Allocations: 23262)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-12-01 18:12:25 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 10.0ms | Allocations: 2023)
+  Rendered users/edit.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2345)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3062)
+Completed 200 OK in 23ms (Views: 17.2ms | ActiveRecord: 0.2ms | Allocations: 4233)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:12:26 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 66.4ms | Allocations: 20130)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 20849)
+Completed 200 OK in 75ms (Views: 72.9ms | ActiveRecord: 1.2ms | Allocations: 21249)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-12-01 18:12:27 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 325)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 1044)
+Completed 200 OK in 20ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 2139)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-12-01 18:14:36 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 447)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 1897)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 3636)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-12-01 18:14:40 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 48.9ms | Allocations: 20535)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 21254)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 1.5ms | Allocations: 21830)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-12-01 18:14:44 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 126)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 845)
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 1841)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-12-01 18:15:31 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 469)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 1919)
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 0.3ms | Allocations: 3656)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-12-01 18:15:35 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 474)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 1922)
+Completed 200 OK in 17ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 3783)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:15:40 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 48.7ms | Allocations: 20535)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 21254)
+Completed 200 OK in 56ms (Views: 51.1ms | ActiveRecord: 2.5ms | Allocations: 21832)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:16:57 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 50.9ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 139)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 22115)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.9ms | Allocations: 23271)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:18:00 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 39.6ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 135)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 22111)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.8ms | Allocations: 23322)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:18:06 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 252)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 1090)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 2042)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:18:07 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 69)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 788)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 1219)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:19:58 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 253)
+  Rendered shared/_header.html.erb (Duration: 2.8ms | Allocations: 414)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 1990)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 3152)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:20:05 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 69)
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 219)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 967)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 1398)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:20:06 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 69)
+  Rendered shared/_header.html.erb (Duration: 1.1ms | Allocations: 219)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 967)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 1349)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:20:07 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 48.3ms | Allocations: 20655)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 219)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 21666)
+Completed 200 OK in 61ms (Views: 53.6ms | ActiveRecord: 2.1ms | Allocations: 22586)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:20:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 69)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 219)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 967)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 1398)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:20:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 219)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 967)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 1349)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:20:11 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 69)
+  Rendered shared/_header.html.erb (Duration: 4.3ms | Allocations: 219)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 967)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 1349)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 18:20:12 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 69)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 219)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 967)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1349)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:20:12 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 81.6ms | Allocations: 20129)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 84.6ms | Allocations: 21021)
+Completed 200 OK in 88ms (Views: 83.8ms | ActiveRecord: 2.3ms | Allocations: 21426)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:20:38 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 49.4ms | Allocations: 20656)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 485)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 22461)
+Completed 200 OK in 60ms (Views: 56.6ms | ActiveRecord: 1.3ms | Allocations: 23635)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:32:26 +0530
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 60.9ms | Allocations: 25327)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/crypto/hash:71
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:140:10)
+    at module.exports (/home/dell/Desktop/Projects/Ajax-rails/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/home/dell/Desktop/Projects/Ajax-rails/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/home/dell/Desktop/Projects/Ajax-rails/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /home/dell/Desktop/Projects/Ajax-rails/node_modules/webpack/lib/NormalModule.js:503:5
+    at /home/dell/Desktop/Projects/Ajax-rails/node_modules/webpack/lib/NormalModule.js:358:12
+    at /home/dell/Desktop/Projects/Ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/home/dell/Desktop/Projects/Ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/home/dell/Desktop/Projects/Ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /home/dell/Desktop/Projects/Ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback (/home/dell/Desktop/Projects/Ajax-rails/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /home/dell/Desktop/Projects/Ajax-rails/node_modules/babel-loader/lib/index.js:44:71 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v19.2.0
+
+  Rendered shared/_header.html.erb (Duration: 4.5ms | Allocations: 501)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 6105.1ms | Allocations: 29577)
+Completed 200 OK in 6134ms (Views: 6107.5ms | ActiveRecord: 2.4ms | Allocations: 33581)
+
+
+Started GET "/packs/js/application-cc35674380b0ac4d538d.js" for 127.0.0.1 at 2022-12-01 18:32:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cc35674380b0ac4d538d.js"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-12-01 18:39:37 +0530
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:25
+  Rendered users/index.html.erb within layouts/application (Duration: 62.5ms | Allocations: 25327)
+  Rendered shared/_header.html.erb (Duration: 1.9ms | Allocations: 501)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 27415)
+Completed 200 OK in 101ms (Views: 74.7ms | ActiveRecord: 2.4ms | Allocations: 31377)
+
+
