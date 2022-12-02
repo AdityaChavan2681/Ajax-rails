@@ -6,7 +6,7 @@
 
       <h1>Users</h1>
 
-      <%= link_to 'New User', new_user_path , class: "btn btn-primary"%>
+      <%= link_to 'New User', new_user_path , class: "btn btn-primary", data: { bs_toggle: 'modal', bs_target: '#newUserModal', remote: true }%>
       <br/>
       <br/>
 
@@ -21,30 +21,28 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody id="usersTable">
           <% @users.each do |user| %>
-            <tr>
-              <td><%= user.name %></td>
-              <td><%= user.email %></td>
-              <td><%= user.address %></td>
-              <td><%= user.contact %></td>
-              <td>
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                    Actions
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                    <li><%= link_to 'Show', user , class: "dropdown-item"%></li>
-                    <li><%= link_to 'Edit', edit_user_path(user) , class: "dropdown-item"%></li>
-                    <li><%= link_to 'Destroy', user, method: :delete,data:  { confirm: 'Are you sure?' }, class: "dropdown-item"%></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
+            <%= render 'user_row', user: user %>
           <% end %>
         </tbody>
       </table>
 
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="newUserModal" tabindex="-1" aria-labelledby="newUserModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="newUserModalLabel">Create a new user</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="newUserForm">
+      </div>
     </div>
   </div>
 </div>
