@@ -1,5 +1,6 @@
 <% if @user.errors.any? %>
  alert('Invalid Detials');
 <% else %>
-  $("#usersTable").html("<%= escape_javascript render('user_row', user: @user)%>");
+  $("#usersTable").prepend("<%= escape_javascript render('user_row', user: @user)%>");
+  $(".close-modal").click();
 <% end %>
